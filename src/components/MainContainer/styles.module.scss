@@ -1,0 +1,59 @@
+
+.mainContainer {
+    display: flex;
+
+    margin: 5.75rem 15.75rem 5.75rem 15.75rem;
+    padding: 3.75rem;
+
+    .animalImageContainer {
+        display: flex;
+        flex-direction: column;
+
+        width: 20%;
+
+        > img {
+            transform: scale(-1, 1)
+        }
+    }
+    
+    .logoContainer {
+        display: flex;
+        flex-direction: column;
+
+        div {
+            width: 50%;
+        }
+        
+        h3 {
+            font-size: 2rem;
+        }
+
+        .textContainer {
+            margin-top: 1.25rem;
+
+            p {
+                line-height: 2.80rem;
+                font-size: 1.80rem;
+            }
+        }
+    }
+}
+
+.buttonsContainer {
+    display: flex;
+
+    margin: 5.75rem 15.75rem 5.75rem 15.75rem;
+    padding: 3.75rem;
+
+    button {
+        display: flex;
+        color: var(--white);
+
+        font-weight: 400;
+        gap: 10px;
+
+        svg {
+            width: 1.75rem;
+        }
+    }
+}

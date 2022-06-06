@@ -1,4 +1,5 @@
 import Head from "next/head"
+import { MainContainer } from "../components/MainContainer"
 
 export default function Home() {
   return (
@@ -6,7 +7,7 @@ export default function Home() {
       <Head>
         <title>Início | Donapets</title>
       </Head>
-      <h1>Teste</h1>
+      <MainContainer />
     </>
   )
 }
