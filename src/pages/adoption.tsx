@@ -1,3 +1,12 @@
+import Head from "next/head";
+
 export default function Adoption() {
-    return <h1>Adoção</h1>;
+    return (
+        <>
+            <Head>
+                <title>Adoção | Donapets</title>
+            </Head>
+            <h1>Adoção</h1>
+        </>
+    );
 }

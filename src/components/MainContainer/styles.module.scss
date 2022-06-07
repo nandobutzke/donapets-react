@@ -2,7 +2,7 @@
 .mainContainer {
     display: flex;
 
-    margin: 5.75rem 15.75rem 5.75rem 15.75rem;
+    margin: 5.75rem 15.75rem 3.75rem 15.75rem;
     padding: 3.75rem;
 
     .animalImageContainer {
@@ -25,7 +25,11 @@
         }
         
         h3 {
-            font-size: 2rem;
+            font-size: 1.35rem;
+
+            border-bottom: 2px dashed var(--yellow-600);
+            width: fit-content;
+            padding-bottom: 1.25rem;
         }
 
         .textContainer {
@@ -33,27 +37,45 @@
 
             p {
                 line-height: 2.80rem;
-                font-size: 1.80rem;
+                font-size: 1.25rem;
+                font-weight: 300;
             }
         }
     }
 }
 
-.buttonsContainer {
+.footerMainContainer {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
-    margin: 5.75rem 15.75rem 5.75rem 15.75rem;
+    margin: 1.75rem 15.75rem 1.75rem 15.75rem;
     padding: 3.75rem;
 
-    button {
+    div {
         display: flex;
-        color: var(--white);
+        gap: 1.75rem;
 
-        font-weight: 400;
-        gap: 10px;
+        button {
+            display: flex;
+            color: var(--white);
+    
+            font-weight: 400;
+            gap: 10px;
+    
+            svg {
+                width: 1.75rem;
+            }
+        }
 
-        svg {
-            width: 1.75rem;
+        h4 {
+            font: 1.25rem 300 var(--white);
+
+            span {
+                color: var(--yellow-600);
+            }
         }
     }
+
 }

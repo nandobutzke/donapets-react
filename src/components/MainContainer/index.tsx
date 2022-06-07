@@ -14,9 +14,9 @@ export function MainContainer() {
                     <div>
                         <Image src={logo} />
                     </div>
-                    <h3>PORTAL DE ADOÇÃO DE ANIMAIS ONLINE</h3>
+                    <h3>PORTAL DE ADOÇÃO E DOAÇÃO DE ANIMAIS ONLINE</h3>
                     <div className={styles.textContainer}>
-                        <p>Se você tem um animal para adoção, ou deseja encontrar o companheiro perfeito, está no lugar certo!</p>
+                        <p>Tem um animal para adoção, ou deseja doar uma quantia para ajudar ONGs protetoras de animais? Aqui você pode!</p>
                     </div>
                 </div>
                 <div className={styles.animalImageContainer}>
@@ -24,9 +24,14 @@ export function MainContainer() {
                     <Image src={dog} style={{ transform: 'scale(1, -1)' }} />
                 </div>
             </main>
-            <div className={styles.buttonsContainer}>
-                <Button color="primary" icon={<FaDog />}>Adotar</Button>
-                <Button color="primary" icon={<FaMoneyCheckAlt />}>Doar</Button>
+            <div className={styles.footerMainContainer}>
+                <div>
+                    <Button color="yellow-600" icon={<FaDog />}>Adotar</Button>
+                    <Button color="yellow-600" icon={<FaMoneyCheckAlt />}>Doar</Button>
+                </div>
+                <div>
+                    <h4>R$ <span>4.323,00</span> doados!</h4>
+                </div>
             </div>
         </>
     );

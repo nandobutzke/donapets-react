@@ -5,7 +5,8 @@ export default function Document() {
         <Html>
             <Head>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+                <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet" />
             </Head>
             <body>
                 <Main />
