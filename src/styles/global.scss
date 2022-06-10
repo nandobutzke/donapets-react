@@ -10,12 +10,13 @@
     --yellow-600: #fda41e;
     --gray-50: #e1e1e6;
     --gray-300: #a8a8b3;
-    --gray-900: #121214;
+    --brown-800: #150c02;
+    --brown-900: #070401;
 }
 
 body {
     color: var(--white);
-    background-color: var(--gray-900);
+    background-color: var(--brown-900);
 }
 
 @media (max-width: 1080px) {

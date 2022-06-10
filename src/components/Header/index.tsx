@@ -23,7 +23,7 @@ export function Header() {
                         </ActiveLink>
                     </li>
                     <li>
-                        <ActiveLink href="/cadastrar-animal" activeClassName="active">
+                        <ActiveLink href="/animal-register" activeClassName="active">
                             <a>Cadastrar Animal</a>
                         </ActiveLink>
                     </li>
