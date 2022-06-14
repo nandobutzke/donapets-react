@@ -1,5 +1,5 @@
 import Head from "next/head"
-import { MainContainer } from "../components/MainContainer"
+import { MainContainer } from "../components/HomePageContainer"
 
 export default function Home() {
   return (

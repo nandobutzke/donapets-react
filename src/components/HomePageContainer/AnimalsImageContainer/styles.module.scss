@@ -1,0 +1,10 @@
+.animalImageContainer {
+    display: flex;
+    flex-direction: row;
+
+    width: 50%;
+
+    > img {
+        transform: scale(1, -1)
+    }
+}

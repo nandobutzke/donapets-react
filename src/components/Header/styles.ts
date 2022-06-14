@@ -14,6 +14,9 @@ export const Container = styled.header`
     nav {
         ul {
             display: flex;
+            justify-content: center;
+            align-items: center;
+            
             gap: 1.25rem;
 
             list-style: none;

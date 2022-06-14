@@ -1,15 +1,13 @@
-import Image from "next/image";
-import logo from '../../../public/img/donapets-title.png';
 import { ActiveLink } from "../ActiveLink";
+import { Logo } from "../Logo";
+import { SignInButton } from "../SignInButton";
 
 import { Container } from "./styles";
 
 export function Header() {
     return (
         <Container>
-            <div>
-               <Image src={logo} />
-            </div>
+            <Logo />
             <nav>
                 <ul>
                     <li>
@@ -23,17 +21,10 @@ export function Header() {
                         </ActiveLink>
                     </li>
                     <li>
-                        <ActiveLink href="/animal-register" activeClassName="active">
-                            <a>Cadastrar Animal</a>
-                        </ActiveLink>
-                    </li>
-                    <li>
                         |
                     </li>
                     <li>
-                        <ActiveLink href="/login" activeClassName="active">
-                            <a>Acessar</a>
-                        </ActiveLink>
+                        <SignInButton>Acessar</SignInButton>
                     </li>
                 </ul>
             </nav>
