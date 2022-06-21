@@ -1,3 +1,4 @@
+import { useSession } from "next-auth/react";
 import { ActiveLink } from "../ActiveLink";
 import { Logo } from "../Logo";
 import { SignInButton } from "../SignInButton";
@@ -24,7 +25,7 @@ export function Header() {
                         |
                     </li>
                     <li>
-                        <SignInButton>Acessar</SignInButton>
+                        <SignInButton />
                     </li>
                 </ul>
             </nav>

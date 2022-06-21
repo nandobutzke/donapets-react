@@ -17,7 +17,7 @@ export const StyledButton = styled.button`
     color: var(--white);
 
     svg {
-        font-size: 1.25rem;
+        font-size: 2.25rem;
         color: var(--primary);
     }
 `;

@@ -1,13 +1,27 @@
-import { ReactNode } from "react";
 import { StyledButton } from "./styles";
-import { FaGoogle } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
+import { signIn, signOut, useSession } from "next-auth/react";
+import Image from "next/image";
 
-interface SignInButtonProps {
-    children: ReactNode;
-}
+export function SignInButton() {
+    const { data: session, status } = useSession();
 
-export function SignInButton({ children }: SignInButtonProps) {
-    return (
-        <StyledButton type="button"><FaGoogle />{children}</StyledButton>
-    );
+    return status === "authenticated" ? (
+        <StyledButton type="button" onClick={() => signOut()}>
+            <Image 
+                src={session.user.image} 
+                width={40} 
+                height={40} 
+                style={{
+                    borderRadius: '50%'
+                }}
+            />
+            {session.user.name}
+        </StyledButton>
+    ) 
+    : (
+        <StyledButton type="button" onClick={() => signIn()}>
+            <FaGithub />Acessar
+        </StyledButton>
+    )
 }
