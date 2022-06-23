@@ -10,17 +10,14 @@ export function SignInButton() {
         <StyledButton type="button" onClick={() => signOut()}>
             <Image 
                 src={session.user.image} 
-                width={40} 
-                height={40} 
-                style={{
-                    borderRadius: '50%'
-                }}
+                width={30} 
+                height={30} 
             />
             {session.user.name}
         </StyledButton>
     ) 
     : (
-        <StyledButton type="button" onClick={() => signIn()}>
+        <StyledButton type="button" onClick={() => signIn('github')}>
             <FaGithub />Acessar
         </StyledButton>
     )

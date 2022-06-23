@@ -5,7 +5,9 @@ export const StyledButton = styled.button`
     justify-content: center;
     align-items: center;
 
-    gap: 0.50rem;
+    width: 100%;
+
+    gap: 0.75rem;
 
     background: #111;
     border: none;
@@ -16,8 +18,12 @@ export const StyledButton = styled.button`
     font-weight: 300;
     color: var(--white);
 
+    img {
+        border-radius: 50%;
+    }
+
     svg {
-        font-size: 2.25rem;
+        font-size: 2rem;
         color: var(--primary);
     }
 `;

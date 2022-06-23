@@ -43,3 +43,17 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+::-webkit-scrollbar {
+    width: 15px;
+    height: 50px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--brown-900);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 10px;
+}
